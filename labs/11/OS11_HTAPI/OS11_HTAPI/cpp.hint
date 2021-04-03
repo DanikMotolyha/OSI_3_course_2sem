@@ -1,0 +1,2 @@
+﻿#define OS11HTAPI_API __declspec(dllexport)
+#define OS11HTAPI_API __declspec(dllimport)
