@@ -1,7 +1,5 @@
-﻿// OS11_02.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
-#include <iostream>
+﻿#include <iostream>
+//#pragma comment(lib, "d:\\Study\\лабараторные\\03_02\\ОСИ\\2021\\labs\\11\\OS11_HTAPI\\Debug\\OS11HTAPI.lib")
 #include "OS11_HTAPI.h";
 
 using namespace std;
@@ -21,7 +19,7 @@ void CreateHT(LPCSTR FileName, int capacity, int keyLen, int valLen, int snapTim
 			filePathCost, snapTime, capacity, keyLen, valLen);
 	}
 	else {
-		printf("\n some error fail@");
+		printf("\n------\nERROR\n------");
 	}
 
 	HT::Close(ht);
@@ -29,7 +27,7 @@ void CreateHT(LPCSTR FileName, int capacity, int keyLen, int valLen, int snapTim
 
 int main(int argc, char* argv[])
 {
-	int capacity = 20, keyLen = 20, valLen = 64, snapTime = 20;
+	int capacity = 20, keyLen = 20, valLen = 64, snapTime = 200;
 	if (argc == 6) {
 		int temp;
 
